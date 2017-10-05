@@ -1,8 +1,8 @@
 ## This repository holds a conan recipe for Boost.System.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/jh06xffhtrh0ishc/branch/stable/1.65.1?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-boost-system/branch/stable/1.65.1)
-[![Travis Status](https://travis-ci.org/bincrafters/conan-boost-system.svg?branch=stable%2F1.65.1)](https://travis-ci.org/bincrafters/conan-boost-system)
-[![Download](https://api.bintray.com/packages/bincrafters/public-conan/Boost.System%3Abincrafters/images/download.svg?version=1.65.1%3Astable) ](https://bintray.com/bincrafters/public-conan/Boost.System%3Abincrafters/1.65.1%3Astable/link)
+[![Build status](https://ci.appveyor.com/api/projects/status/jh06xffhtrh0ishc/branch/stable/1.64.0?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-boost-system/branch/stable/1.64.0)
+[![Travis Status](https://travis-ci.org/bincrafters/conan-boost-system.svg?branch=stable%2F1.64.0)](https://travis-ci.org/bincrafters/conan-boost-system)
+[![Download](https://api.bintray.com/packages/bincrafters/public-conan/Boost.System%3Abincrafters/images/download.svg?version=1.64.0%3Astable) ](https://bintray.com/bincrafters/public-conan/Boost.System%3Abincrafters/1.64.0%3Astable/link)
 
 [Conan.io](https://conan.io) package for [Boost.System](https://github.com/Boostorg/System) project
 
@@ -12,14 +12,14 @@ The packages generated with this **conanfile** can be found in [Bintray](https:/
 
 ### Basic setup
 
-    $ conan install Boost.System/1.65.1@bincrafters/stable
+    $ conan install Boost.System/1.64.0@bincrafters/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    Boost.System/1.65.1@bincrafters/stable
+    Boost.System/1.64.0@bincrafters/stable
 
     [generators]
     txt
@@ -46,7 +46,7 @@ The following command both runs all the steps of the conan file, and publishes t
 
 ## Upload
 
-    $ conan upload Boost.System/1.65.1@bincrafters/stable --all -r bincrafters
+    $ conan upload Boost.System/1.64.0@bincrafters/stable --all -r bincrafters
 
 ### License
 [Boost](www.boost.org/LICENSE_1_0.txt)
