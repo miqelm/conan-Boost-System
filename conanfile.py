@@ -13,12 +13,12 @@ class BoostSystemConan(ConanFile):
     lib_short_names = ["system"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Generator/1.65.1@bincrafters/stable"
-    requires = "Boost.Config/1.65.1@bincrafters/stable", \
-        "Boost.Assert/1.65.1@bincrafters/stable", \
-        "Boost.Core/1.65.1@bincrafters/stable", \
-        "Boost.Predef/1.65.1@bincrafters/stable", \
-        "Boost.Winapi/1.65.1@bincrafters/stable"
+    build_requires = "Boost.Generator/1.65.1@bincrafters/testing"
+    requires = "Boost.Config/1.65.1@bincrafters/testing", \
+        "Boost.Assert/1.65.1@bincrafters/testing", \
+        "Boost.Core/1.65.1@bincrafters/testing", \
+        "Boost.Predef/1.65.1@bincrafters/testing", \
+        "Boost.Winapi/1.65.1@bincrafters/testing"
 
     def source(self):
         boostorg_github = "https://github.com/boostorg"
@@ -39,5 +39,5 @@ class BoostSystemConan(ConanFile):
 
     def package_info(self):
         self.user_info.lib_short_names = ",".join(self.lib_short_names)
-        self.cpp_info.libs = self.collect_libs()
+        self.cpp_info.libs = tools.collect_libs(self)
         self.cpp_info.defines.append("BOOST_ALL_NO_LIB=1")
